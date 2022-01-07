@@ -1,0 +1,23 @@
+package com.ksnx3684.s5;
+
+public class MyGod {
+
+	private static MyGod myGod;
+	
+	private MyGod() {}
+	
+	public static MyGod makeGod() {
+		if(MyGod.myGod == null) {
+			MyGod.myGod = new MyGod();
+		}
+		
+		return MyGod.myGod;
+	}
+
+}
+	
+	
+//	public static void makeGod() {
+//		MyGod myGod = new MyGod();
+//	}
+
